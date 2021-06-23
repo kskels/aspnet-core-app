@@ -57,5 +57,3 @@ oc apply -f deploy/base/aspnet-core-hpa.yaml
 # load generation
 hey -n 200000 -c 10 https://aspnet-core-app-dotnet-apps-dev.apps.ocp4.kskels.com/Home/RedisCache
 ```
-
-Another test
