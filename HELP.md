@@ -1,7 +1,5 @@
 # App Deployment
 
-
-
 ```bash
 oc new-project dotnet-apps-dev
 oc new-app --name aspnet-core-redis --docker-image=registry.redhat.io/rhel8/redis-6
