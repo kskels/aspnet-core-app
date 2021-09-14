@@ -3,6 +3,8 @@ kind: RoleBinding
 metadata:
   name: dotnet-apps-prod-role-binding
   namespace: dotnet-apps-prod
+  annotations:
+    argocd.argoproj.io/sync-wave: "0"
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
