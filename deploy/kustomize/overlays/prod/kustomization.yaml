@@ -3,8 +3,8 @@ kind: Kustomization
 
 bases:
 - ../../base
-- aspnet-core-apps-prod-ns.yaml
-- aspnet-core-apps-prod-rb.yaml
+- aspnet-core-app-prod-ns.yaml
+- aspnet-core-app-prod-rb.yaml
 
 images:
 - name: quay.io/kskels/aspnet-core-app
