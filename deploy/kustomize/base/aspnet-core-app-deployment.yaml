@@ -1,9 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  labels:
-    app: aspnet-core-app
   name: aspnet-core-app
+  annotations:
+    argocd.argoproj.io/sync-wave: "2"
 spec:
   replicas: 1
   selector:
@@ -15,7 +15,7 @@ spec:
         app: aspnet-core-app
     spec:
       containers:
-        - image: quay.io/kskels/aspnet-core-app:v1.0
+        - image: quay.io/kskels/aspnet-core-app:latest
           imagePullPolicy: Always
           name: aspnet-core-app
           ports:

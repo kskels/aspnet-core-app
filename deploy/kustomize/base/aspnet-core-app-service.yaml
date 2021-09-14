@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  labels:
-    app: aspnet-core-app
   name: aspnet-core-app
+  annotations:
+    argocd.argoproj.io/sync-wave: "2"
 spec:
   ports:
     - name: 8080-tcp
